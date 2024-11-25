@@ -1,0 +1,35 @@
+{
+    "name": "benchling",
+    "label": "Benchling",
+    "dependencies": [
+        {
+            "type": "service",
+            "name": "http",
+            "version": "v1.7.0",
+            "instanceId": "shared"
+        }
+    ],
+    "configurationBuilder": "/configurationBuilder.js",
+    "configuration": [
+        {
+            "name": "tenant",
+            "label": "Tenant",
+            "type": "text",
+            "required": true
+        },
+        {
+            "label": "API Key",
+            "name": "apiKey",
+            "type": "text",
+            "required": true
+        }
+    ],
+    "events": [],
+    "metadata": [
+        {
+            "type": "script",
+            "namespace": "api",
+            "path": "/scripts/api.js"
+        }
+    ]
+}
